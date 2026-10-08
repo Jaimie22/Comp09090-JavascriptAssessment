@@ -7,9 +7,50 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="navbar"><div class="navbar__container"><a href="index.html" class="navbar__brand">B01831071 - Jaimie Neilson</a>
-    <nav class="navbar__nav" aria-label="Main navigation"><ul class="nav-list"><li><a href="index.html" class="nav-link">About<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li><li><a href="videos.html" class="nav-link">Videos<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li><li><a href="links.html" class="nav-link">Links<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li><li><a href="gallery.html" class="nav-link is-active">Gallery<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li><li><a href="contact.html" class="nav-link">Contact<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li></ul></nav><button class="navbar__mobile-toggle" id="mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu-pane"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button></div></header>
-  <main class="content"><section class="content__inner"><p class="eyebrow">Gallery page</p><h1>Gallery</h1><p class="lead">This page completes the shared structure of the project. The design has a clear header, a readable main section, and a mobile menu.</p><div class="card-grid"><article class="card"><span class="card__number">01</span><h2>Content</h2><p>Every page can contain different information and examples.</p></article><article class="card"><span class="card__number">02</span><h2>Navigation</h2><p>The five-element journey stays accessible from every page.</p></article><article class="card"><span class="card__number">03</span><h2>Accessibility</h2><p>Labels, focus states, and keyboard controls are included.</p></article></div><p class="page-footer">Gallery page of 5</p></section></main>
+  <header class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__brand">COMP09090 - JavaScript Fundamentals</a>
+      <nav class="navbar__nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">About<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+          <li><a href="Inspiration.html" class="nav-link">Inspiration<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+          <li><a href="gallery.html" class="nav-link is-active" aria-current="page">Gallery<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+          <li><a href="videos.html" class="nav-link">Videos<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+          <li><a href="contact.html" class="nav-link">Contact<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+        </ul>
+      </nav>
+      <button class="navbar__mobile-toggle" id="mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu-pane">
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3V6Zm0 5h18v2H3v-2Zm0 5h18v2H3v-2Z" /></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu-pane" id="mobile-menu-pane">
+    <nav aria-label="Mobile navigation">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">About<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+        <li><a href="Inspiration.html" class="nav-link">Inspiration<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+        <li><a href="gallery.html" class="nav-link is-active" aria-current="page">Gallery<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+        <li><a href="videos.html" class="nav-link">Videos<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+        <li><a href="contact.html" class="nav-link">Contact<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main class="content">
+    <section class="content__inner">
+      <p class="eyebrow">Gallery page</p>
+      <h1>Gallery</h1>
+      <p class="lead">This page completes the shared structure of the project. The design has a clear header, a readable main section, and a mobile menu.</p>
+      <div class="card-grid">
+        <article class="card"><span class="card__number">01</span><h2>Content</h2><p>Every page can contain different information and examples.</p></article>
+        <article class="card"><span class="card__number">02</span><h2>Navigation</h2><p>The five-element journey stays accessible from every page.</p></article>
+        <article class="card"><span class="card__number">03</span><h2>Accessibility</h2><p>Labels, focus states, and keyboard controls are included.</p></article>
+      </div>
+      <p class="page-footer">Gallery page 3 of 5</p>
+    </section>
+  </main>
+
   <script src="script.js"></script>
 </body>
 </html>
