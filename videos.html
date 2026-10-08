@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos - Assessment Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__brand">Vector</a>
+      <nav class="navbar__nav" aria-label="Main navigation"><ul class="nav-list">
+        <li><a href="index.html" class="nav-link">About<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+        <li><a href="videos.html" class="nav-link is-active">Videos<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+        <li><a href="links.html" class="nav-link">Links<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+        <li><a href="contact.html" class="nav-link">Contact<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+      </ul></nav>
+      <button class="navbar__mobile-toggle" id="mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu-pane"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3V6Zm0 5h18v2H3v-2Zm0 5h18v2H3v-2Z" /></svg></button>
+    </div>
+  </header>
+  <div class="mobile-menu-pane" id="mobile-menu-pane"><nav aria-label="Mobile navigation"><ul class="nav-list">
+    <li><a href="index.html" class="nav-link">About<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+    <li><a href="videos.html" class="nav-link">Videos<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+    <li><a href="links.html" class="nav-link">Links<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+    <li><a href="gallery.html" class="nav-link">Gallery<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+    <li><a href="contact.html" class="nav-link">Contact<svg class="animated-border-svg" viewBox="0 0 100 40" preserveAspectRatio="none"><rect width="100%" height="100%" rx="8" /></svg></a></li>
+  </ul></nav></div>
+  <main class="content"><section class="content__inner"><p class="eyebrow">Videos page</p><h1>Videos</h1><p class="lead">This page demonstrates that the same navigation and styling can be reused across all five elements.</p><div class="card-grid"><article class="card"><span class="card__number">01</span><h2>Navigation links</h2><p>Pages connect through clear links in the header.</p></article><article class="card"><span class="card__number">02</span><h2>Shared styles</h2><p>One stylesheet keeps the visual design consistent.</p></article><article class="card"><span class="card__number">03</span><h2>Simple interaction</h2><p>JavaScript controls the mobile menu without framework code.</p></article></div><p class="page-footer">Videos page of 5</p></section></main>
+  <script src="script.js"></script>
+</body>
+</html>
