@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Element 4 - Suit HUD | TON 618</title>
+  <!-- Bootstrap: the CSS framework that handles the layout, menu and buttons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Our own space theme. Loaded after Bootstrap so it can override it -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- The menu is added here automatically by script.js -->
+  <div id="site-nav"></div>
+
+  <main class="content">
+    <div class="container content__inner">
+      <p class="eyebrow">Element 04</p>
+      <h1>Suit HUD</h1>
+      <p class="lead">The astronaut's suit interface: menus that <strong>respond to every press</strong>, with oxygen readouts and crackling comms.</p>
+
+      <!-- The BabylonJS scene will be drawn inside this frame later -->
+      <div class="scene-frame">
+        <p class="scene-placeholder">Scene in development</p>
+      </div>
+
+      <!-- Two panels side by side on wide screens, stacked on phones -->
+      <div class="row g-3 mt-4">
+        <div class="col-md-6">
+          <div class="info-card">
+            <h2>What this scene shows</h2>
+            <ul class="checklist">
+              <li>GUI menu system</li>
+              <li>Responses to GUI elements</li>
+              <li>Audio</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="info-card">
+            <h2>Controls</h2>
+            <ul class="checklist">
+              <li><strong>Mouse</strong> - use the suit menus</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Previous and next page buttons -->
+      <nav class="element-pager" aria-label="Element navigation">
+        <a href="element3.html" class="btn btn-outline-light">← Adrift</a>
+        <a href="element5.html" class="btn btn-accent">Event Horizon →</a>
+      </nav>
+
+      <p class="page-footer">Element 4 of 5</p>
+    </div>
+  </main>
+
+  <!-- Our shared code (builds the menu), then Bootstrap's code (makes the menu work) -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

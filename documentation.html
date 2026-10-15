@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation | TON 618</title>
+  <!-- Bootstrap: the CSS framework that handles the layout, menu and buttons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Our own space theme. Loaded after Bootstrap so it can override it -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- The menu is added here automatically by script.js -->
+  <div id="site-nav"></div>
+
+  <main class="content">
+    <div class="container content__inner">
+      <p class="eyebrow">Documentation</p>
+      <h1>Building Event Horizon</h1>
+      <p class="lead">A breakdown of <strong>Element 5</strong>: what it contains, how the code works, and the creative choices behind it.</p>
+
+      <!-- Bootstrap accordion: each section folds open when clicked, one at a time -->
+      <div class="accordion" id="docsAccordion">
+
+        <!-- Section 1: open by default -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#docs1" aria-expanded="true" aria-controls="docs1">1. Overview</button>
+          </h2>
+          <div id="docs1" class="accordion-collapse collapse show" data-bs-parent="#docsAccordion">
+            <div class="accordion-body">
+              <p>To be written: what Event Horizon is and what the player experiences.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#docs2" aria-expanded="false" aria-controls="docs2">2. Scene breakdown</button>
+          </h2>
+          <div id="docs2" class="accordion-collapse collapse" data-bs-parent="#docsAccordion">
+            <div class="accordion-body">
+              <p>To be written: the two scenes, and what triggers the switch between them.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#docs3" aria-expanded="false" aria-controls="docs3">3. Code explained</button>
+          </h2>
+          <div id="docs3" class="accordion-collapse collapse" data-bs-parent="#docsAccordion">
+            <div class="accordion-body">
+              <p>Example of the snippet format:</p>
+              <pre class="code-snippet"><code>// The sky follows the camera, so space feels endless
+skybox.infiniteDistance = true;</code></pre>
+              <p>To be written: what each snippet does, and why it was written that way.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#docs4" aria-expanded="false" aria-controls="docs4">4. Code structure</button>
+          </h2>
+          <div id="docs4" class="accordion-collapse collapse" data-bs-parent="#docsAccordion">
+            <div class="accordion-body">
+              <p>To be written: how the code is organised into files and functions, and why.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#docs5" aria-expanded="false" aria-controls="docs5">5. Assets and sources</button>
+          </h2>
+          <div id="docs5" class="accordion-collapse collapse" data-bs-parent="#docsAccordion">
+            <div class="accordion-body">
+              <!-- Bootstrap table. "table-responsive" lets it scroll sideways on phones -->
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr><th>Asset</th><th>Type</th><th>Source</th><th>Licence</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>To be added</td><td>-</td><td>-</td><td>-</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#docs6" aria-expanded="false" aria-controls="docs6">6. Creative choices</button>
+          </h2>
+          <div id="docs6" class="accordion-collapse collapse" data-bs-parent="#docsAccordion">
+            <div class="accordion-body">
+              <p>To be written: the mood, the lighting and audio decisions, and the greybox-to-finished journey.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="page-footer">Documentation · Element 5</p>
+    </div>
+  </main>
+
+  <!-- Our shared code (builds the menu), then Bootstrap's code (makes the menu work) -->
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
