@@ -610,7 +610,7 @@ const createScene = function () {
     // (e) GLOW EFFECT: makes anything "emissive" (the disk, ring and torch lens)
     // bleed soft light around its edges
     const glowLayer = new BABYLON.GlowLayer("glow", scene);
-    glowLayer.intensity = 0.9;
+    glowLayer.intensity = 1.3;
     glowLayer.addExcludedMesh(skybox); // don't let the sky glow
     glowLayer.addExcludedMesh(beam);   // the beam is already soft, so no extra glow
 
